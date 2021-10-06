@@ -20,15 +20,20 @@
         </div>
         <div class="my_container" id="bottom_container">
             <div class="row" id="principal_row">
-                <div class="col-7">
-                    <div class="my_container">
+                <!-- left part  -->
+                <div class="col-7" id="left_part">
+                    <div class="my_container" >
                         <div class="row">
-                            <h1>asdgasjdas</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae culpa omnis modi iure ratione tempore, exercitationem sequi. Dolorem laboriosam officia, perferendis corporis culpa ut, doloribus repellendus ipsum sunt dolorum ipsa!</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet vitae sequi consequuntur, eaque dolorem delectus eum pariatur accusantium iusto eveniet, velit vero magni ullam est hic beatae? Quas, neque delectus?</p>
+                            <div id="left_text_side">
+                                <h1>DAMON VAUGHN</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae culpa omnis modi iure ratione tempore, exercitationem</p>
+                                <span><em>- The New York Times</em></span>
+
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- right part  -->
                 <div class="col-5">
                     <div class="row h-30"></div>
                     <!-- background bianco qui -->
@@ -50,22 +55,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div id="latest_book_release">
-            <div class="container">
-                <div class="row justify-content-center" id="riga__">
-                    <div class="col-6">
-                        <img src="images/book-widget.png" alt="" id="book_widget">
-                    </div>
-                    <div class="col-6">
-                        <h2>Latest Book Release</h2>
-                        <h3 class="text-uppercase">d. vaughn autobiography</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consectetur nesciunt sint veniam nostrum </p>
-                    </div>
-                    <img src="images/hover-button1.png" alt="" id="pay_button">
-                </div>
-            </div>
-        </div> -->
     </header>
 </template>
 
@@ -138,6 +127,23 @@ header{
         margin-right: 0;
         #principal_row{
             height: 100%;
+        }
+        #left_text_side{
+            width: 90%;
+        }
+        #left_part{
+            h1{
+                color: $primaryGold;
+                font-size: 75px;
+            }
+            p{
+                font-size: 50px;
+                color: white;
+            }
+            span{
+                font-size: 25px;
+                color: grey;
+            }
         }
     }
     .my_container{
