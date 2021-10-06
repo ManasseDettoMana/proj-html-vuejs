@@ -4,7 +4,7 @@
             <div class="row">
                 <!-- header logo -->
                 <div class="col-6">
-                    <img src="images/author-logo-round.png" alt="" href="#" id="header_logo">
+                    <a href="#"><img src="images/author-logo-round.png" alt=""  id="header_logo"></a>
                 </div>
                 <!-- header nav  -->
                 <div class="col-6">
@@ -72,7 +72,7 @@ export default {
                 },
                 {
                     name: 'About Me',
-                    link: '#',
+                    link: '#about',
                     isActive: false
 
                 },
