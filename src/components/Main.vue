@@ -8,7 +8,9 @@
                     <a href="#"><img src="images/hover-button2.png" alt=""></a>
                 </div>
             </div>
-            <JumboNav :vettore="navBooksLink"/>
+            <div class="row" id="jumbo_row">
+                <JumboNav :vettore="navBooksLink"/>
+            </div>
         </div>
     </main>
 </template>
@@ -64,6 +66,10 @@ export default {
         p{
             font-size: 30px;
         }
+    }
+    #jumbo_row{
+        height: 200px;
+        background-color: $rowBG;
     }
 }
 </style>
