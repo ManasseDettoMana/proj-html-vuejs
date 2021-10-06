@@ -11,16 +11,19 @@
             <div class="row" id="jumbo_row">
                 <JumboNav :vettore="navBooksLink"/>
             </div>
+            <JumboBanner />
         </div>
     </main>
 </template>
 
 <script>
 import JumboNav from './JumboNav.vue'
+import JumboBanner from './JumboBanner.vue'
 export default {
     name: 'Main',
     components: {
         JumboNav,
+        JumboBanner,
     },
     data: function(){
         return{

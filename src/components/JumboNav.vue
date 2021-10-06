@@ -15,11 +15,7 @@ export default {
 
 <style lang="scss" scope>
 nav{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     ul{
-
         width: 65%;
         margin: 0 auto;
         height: 100%;
