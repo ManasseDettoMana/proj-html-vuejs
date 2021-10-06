@@ -1,10 +1,10 @@
 <template>
-    <header>
-        <div class="my_container">
+    <header class="p-relative">
+        <div class="container">
             <div class="row">
                 <!-- header logo -->
                 <div class="col-6">
-                    <img src="images/author-logo-round.png" alt="">
+                    <img src="images/author-logo-round.png" alt="" href="#">
                 </div>
                 <!-- header nav  -->
                 <div class="col-6">
@@ -18,9 +18,19 @@
                 </div>
             </div>
         </div>
-        <div class="my_container">
-            <div class="row">
-                <div id="lastest_book_release"></div>   
+        <div id="latest_book_release">
+            <div class="container">
+                <div class="row justify-content-center" id="riga__">
+                    <div class="col-6">
+                        <img src="images/book-widget.png" alt="" id="book_widget">
+                    </div>
+                    <div class="col-6">
+                        <h2>Latest Book Release</h2>
+                        <h3 class="text-uppercase">d. vaughn autobiography</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In consectetur nesciunt sint veniam nostrum </p>
+                    </div>
+                    <img src="images/hover-button1.png" alt="" id="pay_button">
+                </div>
             </div>
         </div>
     </header>
@@ -87,7 +97,10 @@ header{
     background-repeat: no-repeat;
     height: 85vh;
     position: relative;
-    .my_container{
+    .p-relative{
+        position: relative;
+    }
+    .container{
         width: 90%;
         margin: 0 auto;
         nav{
@@ -97,9 +110,7 @@ header{
                 display: flex;
                 justify-content: space-between;
                 height: 100%;
-                // margin-top: 30px;
                 li{
-                    // height: 100%;
                     list-style-type: none;
                     padding-top: 30px;
 
@@ -130,14 +141,32 @@ header{
             }
         }
     }
-    #lastest_book_release{
-        width: 650px;
+    #latest_book_release{
+        width: 600px;
         height: 50%;
         background-color: white;
         position: absolute;
         top: 101%;
         left: 100%;
         transform: translate(-100%, -100%);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        .container{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            #riga__{
+                padding-top: 40px;
+                #pay_button{
+                    width: 100%;
+                    height: 100px;
+                }
+                #book_widget{
+                    width: 250px
+                }
+            }
+        }
     }
 }
 
