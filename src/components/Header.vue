@@ -81,7 +81,7 @@ export default {
 @import '~@fortawesome/fontawesome-free/css/all.css';
 @import './style/variables.scss';
 header{
-    background: url('../assets/hero-07-2x.jpg'), linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.9));
+    background-image:linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.9) 100%), url('../assets/hero-07-2x.jpg') ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
