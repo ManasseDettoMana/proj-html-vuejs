@@ -31,4 +31,9 @@ body{
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+.my_container{
+  width: 95%;
+  margin: 0 auto;
+}
 </style>
