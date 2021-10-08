@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="my_container">
-            <div class="row d-flex justify-content-center align-items-center" id="link_row">
+            <div class="row d-flex " id="link_row">
                 <div class="col-3">
                     <img src="images/author-logo-round-small.png" alt="">
                 </div>
@@ -11,20 +11,22 @@
                         <li v-for="(element, index) in aboutME" :key="index">{{element.text}}</li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-3" >
                     <h2>useful links</h2>
-                    <ul>
-                        <li v-for="(element, index) in usefulLinks" :key="index"><a :href="element.link">{{element.text}}</a></li>
+                    <ul id="central_link_column">
+                        <li v-for="(element, index) in usefulLinks" :key="index"><a :href="element.link"><i class="fas fa-chevron-right"></i>{{element.text}}</a></li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-3" >
                     <h2>contact info</h2>
                     <ul>
                         <li v-for="(element, index) in contactInfo" :key="index"><a :href="element.link">{{element.text}}</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="row"></div>
+            <div class="row d-flex justify-content-center " id="bottom_row">
+                <p>&copy; Copyright 2012-2020 | avada Theme by <span>ThemeFusion</span> | All rights Reserved | Powered by <span>WordPress</span></p>
+            </div>
         </div>
     </footer>
 </template>
@@ -36,7 +38,7 @@ export default {
         return{
             aboutME: [              
                 {
-                    text: 'lorem ipsum ecc ecc lorem ipsum ecc ecc lorem ipsum ecc ecc lorem ipsum ecc ecc'
+                    text: 'lorem ipsum ecc ecc lorem ipsum ecc ecc lorem ipsum ecc ecc lorem ipsum ecc ecclorem ipsum ecc ecc lorem ipsum ecc ecc lorem ipsum ecc ecc lorem ipsum ecc ecc'
                 }
             ],
             usefulLinks: [
@@ -90,26 +92,52 @@ export default {
 
 footer{
     background-image: url('../assets/footer-3.jpg');
-    background-position: center;
-    height: 600px;
+    background-position: top;
+    height: 450px;
     .my_container{
         height: 100%;
-        #link_row{
-            height: 80%;
-            ul{
-                padding: 0;
+        ul{
+            padding: 0;
+            li{
+                color: grey;
+                list-style-type: none;
+                padding-bottom: 15px;
+                font-size: 14px;
+                a{
+                    color: grey;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
             }
-            h2{
-                color: white;
-                text-transform: uppercase;
-            }
+        }
+        h2{
+            color: white;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+    }
+    .col-3{
+        padding-top: 100px;
+    }
+    p{
+        color: grey;
+    }
+    span{
+        color: white;
+    }
+    #bottom_row{
+        text-align: center;
+    }
+    #central_link_column{
+        i{
+            padding-right: 15px;
+            font-size: 13px;
+            color: white;
             a{
                 color: white;
-                text-decoration: none;
-            }
-            li{
-                color: white;
-                list-style-type: none;
             }
         }
     }
