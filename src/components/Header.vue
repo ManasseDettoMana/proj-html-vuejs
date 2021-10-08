@@ -146,45 +146,42 @@ header{
             }
         }
     }
-    .my_container{
-        width: 90%;
-        margin: 0 auto;
-        nav{
-            height: 75px;
 
-            ul{
-                display: flex;
-                justify-content: space-between;
-                height: 100%;
-                li{
-                    list-style-type: none;
-                    padding-top: 30px;
+    nav{
+        height: 75px;
 
-                    &:hover{
-                        color: $primaryGold;
-                        border-top: 5px solid $primaryGold;
-                        a{
-                            color: $primaryGold;
-                        }
-                    }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+            li{
+                list-style-type: none;
+                padding-top: 30px;
+
+                &:hover{
+                    color: $primaryGold;
+                    border-top: 5px solid $primaryGold;
                     a{
-                        text-decoration: none;
-                        color: white;
-                        font-weight: 400;
+                        color: $primaryGold;
                     }
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: 400;
                 }
             }
         }
+    }
 
-        #header_logo{
-            width: 200px;
-        }
-        .active{
-            border-top: 5px solid $primaryGold;
-            
-            a{
-                color: $primaryGold;
-            }
+    #header_logo{
+        width: 200px;
+    }
+    .active{
+        border-top: 5px solid $primaryGold;
+        
+        a{
+            color: $primaryGold;
         }
     }
 }
